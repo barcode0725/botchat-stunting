@@ -1,0 +1,119 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask1 path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_happy
+  - intent: ask1
+  - action: utter_ask1
+
+- story: ask2 path
+  steps:
+  - intent: ask2
+  - action: utter_ask2
+
+- story: ask3 path
+  steps:
+  - intent: ask3
+  - action: utter_ask3
+
+- story: ask4 path
+  steps:
+  - intent: ask4
+  - action: utter_ask4
+
+- story: ask5 path
+  steps:
+  - intent: ask5
+  - action: utter_ask5
+
+- story: ask6 path
+  steps:
+  - intent: ask6
+  - action: utter_ask6
+
+- story: ask7 path
+  steps:
+  - intent: ask7
+  - action: utter_ask7
+
+- story: ask8 path
+  steps:
+  - intent: ask8
+  - action: utter_ask8
+
+- story: ask9 path
+  steps:
+  - intent: ask9
+  - action: utter_ask9
+
+- story: ask10 path
+  steps:
+  - intent: ask10
+  - action: utter_ask10
+
+- story: ask11 path
+  steps:
+  - intent: ask11
+  - action: utter_ask11
+
+- story: ask12 path
+  steps:
+  - intent: ask12
+  - action: utter_ask12
+
+- story: ask13 path
+  steps:
+  - intent: ask13
+  - action: utter_ask13
+
+- story: ask14 path
+  steps:
+  - intent: ask14
+  - action: utter_ask14
+
+- story: ask15 path
+  steps:
+  - intent: ask15
+  - action: utter_ask15
+
+- story: ask16 path
+  steps:
+  - intent: ask16
+  - action: utter_ask16
+
+- story: ask17 path
+  steps:
+  - intent: ask17
+  - action: utter_ask17
